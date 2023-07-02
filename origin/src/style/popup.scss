@@ -1,0 +1,55 @@
+.popup {
+    position: absolute;
+    position: fixed;
+    z-index: 1000;
+    width: 450px;
+    height: 730px;
+    background: lightgray;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    padding-top: 20px;
+    box-sizing: border-box;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+
+    .poster {
+        margin-top: 10px;
+        width: 400px;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    p {
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+
+        .grade {
+            display: inline-block;
+            width: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        h2 {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 30px;
+            text-align: right;
+        }
+        
+    }
+    button {
+        width: 150px;
+        margin: 10px;
+        height: 40px;
+        border: none;
+        color: white;
+        background: #000;
+        cursor: pointer;
+    }
+}

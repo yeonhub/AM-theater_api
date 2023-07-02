@@ -1,0 +1,24 @@
+.form {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+    .input {
+        width: 400px;
+        height: 50px;
+        box-sizing: border-box;
+        outline: none;
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 120px;
+        height: 50px;
+        border: none;
+        background: tomato;
+        color: #fff;
+        vertical-align: top;
+        font-size: 22px;
+    }
+}

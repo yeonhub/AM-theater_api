@@ -1,0 +1,119 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        box-sizing: border-box;
+        margin: 20px;
+        width: 300px;
+        padding: 10px;
+        border: 3px solid gray;
+        border-radius: 20px;
+        position: relative;
+
+        .rank {
+            position: absolute;
+            color: white;
+            font-size: 60px;
+            transform: skew(-20deg);
+            transform-origin: top left;
+            bottom: 170px;
+            left: 30px;
+            font-weight: 500;
+            text-align: center;
+            line-height: 60px;
+            background: rgba($color: #000000, $alpha: 0.5);
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        }
+
+        .poster {
+            text-align: center;
+            width: 275px;
+            height: 390px;
+            border-radius: 20px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+
+        .grade {
+            margin-top: 10px;
+            width: 40px;
+        }
+
+        .name {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 20px;
+            width: 200px;
+            height: 30px;
+            margin-left: 20px;
+            font-size: 25px;
+            color: white;
+        }
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+            strong {
+                font-size: 16px;
+                margin-right: 10px;
+                color: white;
+            }
+        }
+
+        .bot {
+            display: flex;
+            margin: auto;
+            vertical-align: top;
+            justify-content: space-around;
+            .like {
+                display: flex;
+                border: 1px solid grey;
+                padding: 2px 5px;
+                padding-top: 8px;
+                box-sizing: border-box;
+                border-radius: 5px;
+                font-size: 30px;
+                margin-right: 10px;
+                width: 130px;
+                height: 50px;
+                margin-top: 10px;
+
+                svg {
+                    line-height: 0;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+
+                span {
+                    margin-left: 20px;
+                    font-size: 20px;
+                    height: 50px;
+                    color: pink;
+                }
+            }
+
+            button {
+                margin-top: 10px;
+                height: 50px;
+                width: 120px;
+                font-size: 20px;
+                border: none;
+                color: white;
+                background: tomato;
+                cursor: pointer;
+                border-radius: 10px;
+                &:hover {
+                    background: red;
+                }
+            }
+        }
+    }
+}
