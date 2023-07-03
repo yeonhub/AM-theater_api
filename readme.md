@@ -2,13 +2,16 @@
 
 ## 페이지 캡쳐
 
-img(전체)
+<img src="./mdimg/main.png">
 
 ## API JSON
 
 github gist를 이용한 JSON 파일을 api로 받아 구현했다.
 
+
 [movid(gist)](https://gist.github.com/yeonhub/9ccd94d053e5e07750f1972b4a7a3afe)
+
+<img src="./mdimg/json.png">
 
 ```json
 [
@@ -107,7 +110,7 @@ github gist를 이용한 JSON 파일을 api로 받아 구현했다.
 
 ### 1) 영화 검색 기능
 
-img(검색)
+<img src="./mdimg/search.gif">
 
 ```javascript
 const Search = ({ changeInput, onSubmit }) => {
@@ -150,7 +153,7 @@ const Search = ({ changeInput, onSubmit }) => {
 
 ### 2) 상영중 / 상영예정 버튼
 
-img(상영중)
+<img src="./mdimg/on.gif">
 
 ```javascript
 const On = ({ onShow, data ,changeChk,on}) => {
@@ -199,7 +202,7 @@ const On = ({ onShow, data ,changeChk,on}) => {
 
 ### 3) 개봉작만 (checkbox) 버튼
 
-img(개봉작만)
+<img src="./mdimg/onlyOn.gif">
 
 ```javascript
             <p className='onNow'>
@@ -271,7 +274,7 @@ img(개봉작만)
 
 ### 4) 검색된 영화 수 표시
 
-img(검색된)
+<img src="./mdimg/length.png">
 
 ```javascript
             <p className='onNow'>
