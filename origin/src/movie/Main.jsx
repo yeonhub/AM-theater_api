@@ -5,8 +5,6 @@ import List from './List';
 import axios from 'axios'
 import '../assets/css/reset.css'
 import '../style/main.scss'
-import Popup from './Popup';
-
 
 const Main = () => {
     const [data, setData] = useState([])
@@ -23,6 +21,7 @@ const Main = () => {
         const url = `https://gist.githubusercontent.com/yeonhub/9ccd94d053e5e07750f1972b4a7a3afe/raw/e4c32b5573468e6e42cc34123cbc436ea1fa7268/tem.json`
         axios.get(url)
             .then(res => {
+                console.log(res);
                 console.log(res.data);
                 setData(res.data)
                 setDataList(res.data)
